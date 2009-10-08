@@ -23,5 +23,5 @@ module Pandoku::Formats
   end
 
   # Aliases.
-  ReST = RST = reStructuredText = ReStructuredText
+  ReST = RST = ReStructuredText
 end

@@ -18,5 +18,6 @@ module Pandoku::Formats
     end
   end
 
+  # Aliases.
   RTF = RichTextFormat
 end
