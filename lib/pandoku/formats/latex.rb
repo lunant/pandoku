@@ -1,7 +1,7 @@
 require File.dirname(File.dirname(__FILE__)) + '/format'
 
 module Pandoku::Formats
-  # LaTeX format. http://docutils.sourceforge.net/rst.html
+  # LaTeX format. http://www.latex-project.org/
   #
   # == Available Options
   #
