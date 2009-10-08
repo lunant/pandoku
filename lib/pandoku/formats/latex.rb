@@ -5,6 +5,7 @@ module Pandoku::Formats
   #
   # == Available Options
   #
+  # <tt>:standalone</tt>:: Produce output with an appropriate header and footer.
   # <tt>:parse_raw</tt>:: Parse untranslatable LaTeX environments as raw LaTeX,
   #                       instead of ignoring them.
   # <tt>:number_sections</tt>:: Number section headings in LaTeX output.
@@ -20,8 +21,8 @@ module Pandoku::Formats
     end
 
     def self.default_options
-      { :parse_raw => false, :number_sections => false, :no_wrap => false,
-        :toc => false }
+      { :standalone => false, :parse_raw => false, :number_sections => false,
+        :no_wrap => false, :toc => false }
     end
   end
 end
