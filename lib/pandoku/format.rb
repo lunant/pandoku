@@ -21,13 +21,9 @@ module Pandoku
     end
 
     def cliopts
-      escapeshellarg = lambda do |arg|
-        "'" + arg.gsub(/[^\\]'/) {|s| %<#{s.chars.first}\\'> } + "'"
-      end
-      @options.select {|k, v| v } \
-              .collect {|p| %<--#{p[0].gsub('_', '-')}> +
-                            (p[1] != true ? %<=#{p[1]}> : '') } \
-              .join(' ')
+      self.options.select {|k, v| v } \
+                  .collect {|p| %<--#{p[0].to_s.gsub('_', '-')}> +
+                                (p[1] != true ? %<=#{p[1]}> : '') }
     end
   end
 
@@ -39,7 +35,7 @@ module Pandoku
 
   module OutputFormat
     # Compiles the given +document+ to the format.
-    # If a second argument +io+ is true, returns +IO+ instead of +String+.
+    # If a second argument +io+ is +true+, returns +IO+ instead of +String+.
     def compile(document, io = false)
       cin, cout, cerr = Open3.popen3(document.command_for(self))
       cin.print(document.text)

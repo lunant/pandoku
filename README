@@ -1,4 +1,3 @@
-Pandoku
-=======
+= Pandoku
 
 Pandoku is loose Ruby interface for Pandoc, the most powerful markup processor.

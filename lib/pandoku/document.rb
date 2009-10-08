@@ -1,7 +1,7 @@
 require File.dirname(__FILE__) + '/format'
 
 module Pandoku
-  PANDOC_PATH = 'pandoc'
+  PANDOC_PATH = ENV['PANDOC_PATH'] || 'pandoc'
 
   class Document
     attr_reader :format, :text
@@ -16,16 +16,18 @@ module Pandoku
 
     # Makes a command string to execute Pandoc.
     def command_for(format)
-      <<-CMD
-        #{PANDOC_PATH} -f #{self.format.class.name}
-                       -t #{format.class.name}
-                       #{self.format.cliopts}
-                       #{format.cliopts}
-      CMD
+      commands = [PANDOC_PATH, '-f', self.format.class.name,
+                              '-t', format.class.name]
+      commands += self.format.cliopts
+      commands += format.cliopts
+      escapeshellarg = lambda do |arg|
+        "'" + arg.to_s.gsub(/[^\\]'/) {|s| %<#{s.chars.first}\\'> } + "'"
+      end
+      commands.select {|v| v }.collect(&escapeshellarg).join(' ')
     end
 
     # Compiles the document to given +format+.
-    # If a second argument +io+ is true, returns +IO+ instead of +String+.
+    # If a second argument +io+ is +true+, returns +IO+ instead of +String+.
     def compile(format, io = false)
       unless format.is_a?(OutputFormat)
         raise TypeError, 'format must be OutputFormat'
