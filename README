@@ -1,3 +1,38 @@
 = Pandoku
 
 Pandoku is loose Ruby interface for Pandoc, the most powerful markup processor.
+
+== Installation
+
+  gem install pandoku
+
+== Usage
+
+  require 'pandoku'
+  input = Pandoku::Formats::Markdown.new(:smart => true)
+  output = Pandoku::Formats::HTML.new
+  doc = input.parse(<<MKD)
+  Pandoku
+  =======
+
+  [Pandoku][] is loose Ruby interface for [Pandoc].
+
+  [pandoku]: http://github.com/dahlia/pandoku
+  [pandoc]: http://johnmacfarlane.net/pandoc/
+  MKD
+  puts doc.compile(output)
+
+Above code prints following HTML:
+
+  <div id="pandoku"
+  ><h1
+    >Pandoku</h1
+    ><p
+    ><a href="http://github.com/dahlia/pandoku"
+      >Pandoku</a
+      > is loose Ruby interface for <a href="http://johnmacfarlane.net/pandoc/"
+      >Pandoc</a
+      >.</p
+    ></div
+  >
+
