@@ -4,14 +4,16 @@ Pandoku is loose Ruby interface for Pandoc, the most powerful markup processor.
 
 == Installation
 
+Before install Pandoku, you should install Pandoc.
+http://johnmacfarlane.net/pandoc/
+
+  cabal install pandoc
   gem install pandoku
 
 == Usage
 
   require 'pandoku'
-  input = Pandoku::Formats::Markdown.new(:smart => true)
-  output = Pandoku::Formats::HTML.new
-  doc = input.parse(<<MKD)
+  doc = <<MKD
   Pandoku
   =======
 
@@ -20,7 +22,7 @@ Pandoku is loose Ruby interface for Pandoc, the most powerful markup processor.
   [pandoku]: http://github.com/dahlia/pandoku
   [pandoc]: http://johnmacfarlane.net/pandoc/
   MKD
-  puts doc.compile(output)
+  puts doc.pandoku(:markdown => :html)
 
 Above code prints following HTML:
 
