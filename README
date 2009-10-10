@@ -15,7 +15,7 @@ Pandoku is loose Ruby interface for Pandoc, the most powerful markup processor.
   Pandoku
   =======
 
-  [Pandoku][] is loose Ruby interface for [Pandoc].
+  [Pandoku][] is loose Ruby interface for [Pandoc][].
 
   [pandoku]: http://github.com/dahlia/pandoku
   [pandoc]: http://johnmacfarlane.net/pandoc/
