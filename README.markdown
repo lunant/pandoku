@@ -7,8 +7,8 @@ processor written in Haskell.
 > Pandoc is a [Haskell][] library for converting from one markup format to
 > another, and a command-line tool that uses this library. It can read
 > [markdown][] and (subsets of) [reStructuredText][rst], [HTML][],
-> and [LaTeX][], and it can write [markdown][], [reStructuredText][], [HTML][],
-> [LaTeX][], [ConTeXt][], [PDF][], [RTF][], [DocBook XML][docbook],
+> and [LaTeX][], and it can write [markdown][], [reStructuredText][rst],
+> [HTML][], [LaTeX][], [ConTeXt][], [PDF][], [RTF][], [DocBook XML][docbook],
 > [OpenDocument XML][opendocument], [ODT][], [GNU Texinfo][texinfo],
 > [MediaWiki markup][mediawiki], [groff man][man] pages,
 > and [S5][] HTML slide shows.
