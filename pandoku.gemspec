@@ -3,7 +3,7 @@ require 'pathname'
 
 Gem::Specification.new do |s|
   s.name = 'pandoku'
-  s.version = '0.4'
+  s.version = '0.9'
   s.homepage = 'http://github.com/dahlia/pandoku'
   s.summary = s.description = 'Loose Ruby interface for Pandoc, ' \
                               'the most powerful markup processor.'
@@ -14,7 +14,6 @@ Gem::Specification.new do |s|
   s.files << 'Rakefile'
 
   s.require_path = 'lib'
-
   s.has_rdoc = true
 end
 
