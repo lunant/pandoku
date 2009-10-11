@@ -1,12 +1,12 @@
 Pandoku
 =======
 
-Pandoku is loose Ruby interface for [Pandoc][], the most powerful markup
+Pandoku is a loose Ruby interface for [Pandoc][], the most powerful markup
 processor written in Haskell.
 
 > Pandoc is a Haskell library for converting from one markup format to another, and a command-line tool that uses this library. It can read markdown and (subsets of) reStructuredText, HTML, and LaTeX, and it can write markdown, reStructuredText, HTML, LaTeX, ConTeXt, PDF, RTF, DocBook XML, OpenDocument XML, ODT, GNU Texinfo, MediaWiki markup, groff man pages, and S5 HTML slide shows.
 
-[pandoc]: http://homa.egloos.com/
+[pandoc]: http://johnmacfarlane.net/pandoc/
 
 
 Installation
