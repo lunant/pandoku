@@ -1,7 +1,7 @@
 require File.dirname(File.dirname(__FILE__)) + '/format'
 
 module Pandoku::Formats
-  # S5 HTML slide show format.
+  # S5 HTML slide show format. http://meyerweb.com/eric/tools/s5/
   #
   # == Available Options
   #

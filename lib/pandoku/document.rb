@@ -1,8 +1,10 @@
 require File.dirname(__FILE__) + '/format'
 
 module Pandoku
+  # The path of Pandoc executable binary.
   PANDOC_PATH = ENV['PANDOC_PATH'] || 'pandoc'
 
+  # Pseudo IR for Pandoc.
   class Document
     attr_reader :format, :text
 

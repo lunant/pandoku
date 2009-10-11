@@ -2,6 +2,7 @@ require 'open3'
 require File.dirname(__FILE__) + '/document'
 
 module Pandoku
+  # Abstract base class for formats.
   class Format
     attr_reader :options
 

@@ -2,8 +2,10 @@ require File.dirname(__FILE__) + '/format'
 
 module Pandoku
   module Formats
+    # Array of registered format classes.
     LOOKUP_TABLE = []
 
+    # Exception class what be raised when the format cannot be found.
     class LookupError < IndexError; end
 
     # Find a format class by the +name+.
