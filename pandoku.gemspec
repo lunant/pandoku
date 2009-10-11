@@ -3,7 +3,7 @@ require 'pathname'
 
 Gem::Specification.new do |s|
   s.name = 'pandoku'
-  s.version = '0.3'
+  s.version = '0.4'
   s.homepage = 'http://github.com/dahlia/pandoku'
   s.summary = s.description = 'Loose Ruby interface for Pandoc, ' \
                               'the most powerful markup processor.'
