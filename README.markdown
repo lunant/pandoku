@@ -5,7 +5,7 @@ Pandoku is a loose Ruby interface for [Pandoc][], the most powerful markup
 processor written in Haskell.
 
 > Pandoc is a [Haskell][] library for converting from one markup format to
-> another, and a command-line tool that uses this library. It can read
+> another, and a command-line tool that uses this library.  It can read
 > [markdown][] and (subsets of) [reStructuredText][rst], [HTML][],
 > and [LaTeX][], and it can write [markdown][], [reStructuredText][rst],
 > [HTML][], [LaTeX][], [ConTeXt][], [PDF][], [RTF][], [DocBook XML][docbook],
@@ -89,8 +89,26 @@ binary of Pandoc is not in `PATH`.
 
     export PANDOC_PATH="$HOME/.cabal/bin/pandoc"
 
-Or you can define the constant `Pandoc::PANDOC_PATH` before `require 'pandoku'`.
+Or you can define the constant `Pandoku::PANDOC_PATH`
+before `require 'pandoku'`.
 
-    module Pandoc; PANDOC_PATH = "#{ENV['HOME']}/.cabal/bin/pandoc"; end
-    require 'pandoc'
+    module Pandoku; PANDOC_PATH = "#{ENV['HOME']}/.cabal/bin/pandoc"; end
+    require 'pandoku'
+
+
+Web Sites
+---------
+
+The source code of Pandoku is available on GitHub.  It is also an offical page
+of Pandoku.
+
+<http://github.com/dahlia/pandoku>
+
+The Gem package is distributed on Gemcutter.
+
+<http://gemcutter.org/gems/pandoku>
+
+See the respectable original project Pandoc also.
+
+<http://johnmacfarlane.net/pandoc/>
 
