@@ -80,3 +80,17 @@ Above code prints following HTML:
     ></div
     >
 
+
+Path Of Pandoc
+--------------
+
+You should export the environment variable `PANDOC_PATH` when the executable
+binary of Pandoc is not in `PATH`.
+
+    export PANDOC_PATH="$HOME/.cabal/bin/pandoc"
+
+Or you can define the constant `Pandoc::PANDOC_PATH` before `require 'pandoku'`.
+
+    module Pandoc; PANDOC_PATH = "#{ENV['HOME']}/.cabal/bin/pandoc"; end
+    require 'pandoc'
+

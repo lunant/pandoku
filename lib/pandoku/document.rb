@@ -2,7 +2,7 @@ require File.dirname(__FILE__) + '/format'
 
 module Pandoku
   # The path of Pandoc executable binary.
-  PANDOC_PATH = ENV['PANDOC_PATH'] || 'pandoc'
+  PANDOC_PATH = ENV['PANDOC_PATH'] || 'pandoc' unless defined? PANDOC_PATH
 
   # Pseudo IR for Pandoc.
   class Document
