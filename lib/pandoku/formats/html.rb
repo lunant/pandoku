@@ -8,7 +8,7 @@ module Pandoku::Formats
   # <tt>:standalone</tt>:: Produce output with an appropriate header and footer.
   # <tt>:parse_raw</tt>:: Parse untranslatable HTML codes as raw HTML,
   #                       instead of ignoring them.
-  # <tt>latexmathml</tt>::
+  # <tt>:latexmathml</tt>::
   #     Use LaTeXMathML to display embedded TeX math in HTML output.
   #     To insert a link to a local copy of the <b>LaTeXMathML.js</b> script,
   #     provide a URL string.  If just <tt>true</tt> is provided, the contents

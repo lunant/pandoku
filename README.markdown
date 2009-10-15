@@ -112,3 +112,7 @@ See the respectable original project Pandoc also.
 
 <http://johnmacfarlane.net/pandoc/>
 
+There is a good alternative Ruby interface to Pandoc from a different angle.
+
+<http://github.com/autodata/pandoc-ruby>
+
