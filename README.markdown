@@ -61,7 +61,7 @@ It defines `String#pandoku` method.
 
     [Pandoku][] is loose Ruby interface for [Pandoc][].
 
-    [pandoku]: http://github.com/dahlia/pandoku
+    [pandoku]: http://github.com/lunant/pandoku
     [pandoc]: http://johnmacfarlane.net/pandoc/
     MKD
     puts doc.pandoku(:markdown => :html)
@@ -72,7 +72,7 @@ Above code prints following HTML:
     ><h1
     >Pandoku</h1
     ><p
-    ><a href="http://github.com/dahlia/pandoku"
+    ><a href="http://github.com/lunant/pandoku"
       >Pandoku</a
       > is loose Ruby interface for <a href="http://johnmacfarlane.net/pandoc/"
       >Pandoc</a
@@ -102,7 +102,7 @@ Web Sites
 The source code of Pandoku is available on GitHub.  It is also an offical page
 of Pandoku.
 
-<http://github.com/dahlia/pandoku>
+<http://github.com/lunant/pandoku>
 
 The Gem package is distributed on Gemcutter.
 
@@ -115,4 +115,12 @@ See the respectable original project Pandoc also.
 There is a good alternative Ruby interface to Pandoc from a different angle.
 
 <http://github.com/autodata/pandoc-ruby>
+
+
+Author
+------
+
+Hong, MinHee (洪民憙)  
+http://dahlia.kr/  
+dahlia@lunant.net
 
