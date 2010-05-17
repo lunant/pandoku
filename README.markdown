@@ -34,18 +34,17 @@ processor written in Haskell.
 Installation
 ------------
 
-Before install Pandoku, you should install [Pandoc][]. If [Haskell platform][]
+You should install [Pandoc][] before installing Pandoku. If [Haskell platform][]
 is installed on your system, you should just use `cabal` tool.
 
     cabal install pandoc
 
-Pandoku gem is distributed with [Gemcutter][].
+Pandoku gem is distributed with [RubyGems][].
 
-    gem install gemcutter
-    gem tumble
+    gem update --system
     gem install pandoku
 
-[gemcutter]: http://gemcutter.org/
+[rubygems]: http://rubygems.org/
 [haskell platform]: http://hackage.haskell.org/platform/
 
 
@@ -66,7 +65,7 @@ It defines `String#pandoku` method.
     MKD
     puts doc.pandoku(:markdown => :html)
 
-Above code prints following HTML:
+Above code prints the following HTML:
 
     <div id="pandoku"
     ><h1
@@ -104,11 +103,11 @@ of Pandoku.
 
 <http://github.com/lunant/pandoku>
 
-The Gem package is distributed on Gemcutter.
+The Gem package is distributed on RubyGems.
 
-<http://gemcutter.org/gems/pandoku>
+<http://rubygems.org/gems/pandoku>
 
-See the respectable original project Pandoc also.
+Also take a look at the original Pandoc, an amazing markup processor.
 
 <http://johnmacfarlane.net/pandoc/>
 
