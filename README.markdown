@@ -119,7 +119,7 @@ There is a good alternative Ruby interface to Pandoc from a different angle.
 Author
 ------
 
-Hong, MinHee (洪民憙)  
+Hong Minhee (洪民憙)  
 http://dahlia.kr/  
 dahlia@lunant.net
 
